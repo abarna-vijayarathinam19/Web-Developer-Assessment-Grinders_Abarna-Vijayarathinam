@@ -44,11 +44,18 @@ body {
 /* BUTTON PRIMARY */
 
 .btn {
-    padding: 15px 25px;
-    border-radius: 6px;
-    font-size: var(--text-medium);
-    font-weight: var(--font-weight-medium);
-    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: var(--gray-2); 
+    background-color: var(--primary); 
+    border: 2px solid var(--primary); 
+    border-radius: 20px; 
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) 
+            drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+            drop-shadow(0px 4px 4px var(--primary)); /* Drop shadow effects */
 
 }
 
@@ -61,14 +68,15 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-light);
+    background-color: var(--primary); 
+            color: var(--gray-2); 
 }
 
 /* BUTTON SECONDARY */
 
 .btn-secondary {
     background-color: var(--gray-2);
-    color: var(--gray-1);
+    color: var(--primary);
 }
 
 .btn-secondary:focus {
@@ -82,6 +90,7 @@ body {
     box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.05) !important;
     color: var(--gray-1);
 }
+
 
 
 /* NAVBAR */
